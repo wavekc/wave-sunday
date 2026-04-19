@@ -1,3 +1,3 @@
 # wave-sunday
 WAVE Church Sunday messages
-updated 4/18/2026
+updated 4/19/2026
