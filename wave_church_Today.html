@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Invitation into God’s Presence · Wave Church</title>
+<title>Moses’ Advice to Us · Wave Church</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   --pad:   40px;
 }
 *{box-sizing:border-box;}
-html{-webkit-text-size-adjust:100%;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
 body{
   margin:0;background:var(--bg);color:var(--dark);
   font-family:'DM Sans',system-ui,-apple-system,sans-serif;
@@ -40,170 +40,154 @@ body{
 }
 .hdr-title{
   font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;font-style:italic;
-  color:#fff;line-height:1.25;margin-top:3px;
+  color:#ffffff;line-height:1.25;margin-top:3px;
 }
 .hdr-r{display:flex;align-items:center;gap:16px;}
 .icon-btn{
-  display:flex;align-items:center;justify-content:center;
-  width:36px;height:36px;padding:0;border:0;border-radius:50%;
-  background:transparent;color:rgba(255,255,255,.6);cursor:pointer;
-  transition:color .2s,background .2s;
+  background:none;border:0;padding:6px;cursor:pointer;line-height:0;
+  color:rgba(255,255,255,.6);transition:color .2s;
 }
-.icon-btn:hover{color:#fff;background:rgba(255,255,255,.09);}
-.icon-btn:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+.icon-btn:hover{color:#fff;}
 .icon-btn svg{width:19px;height:19px;}
-.hdr-logo{height:44px;width:auto;display:block;border-radius:3px;}
+.hdr-logo{height:44px;width:auto;display:block;}
 
 /* ───────── LAYOUT ───────── */
-.wrap{max-width:760px;margin:0 auto;padding:0 var(--pad) 96px;}
+.wrap{max-width:820px;margin:0 auto;padding:0 var(--pad) 90px;}
 
 /* ───────── HERO ───────── */
-.hero{padding:72px 0 52px;border-bottom:1px solid var(--light);}
+.hero{padding:64px 0 46px;border-bottom:1px solid var(--light);}
 .hero-label{
-  font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mid);
+  font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--red);
 }
 .hero-title{
-  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;
-  font-size:clamp(40px,8.6vw,72px);line-height:1.04;letter-spacing:-.015em;
-  margin:18px 0 0;color:var(--dark);
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-weight:600;
+  font-size:clamp(42px,8vw,76px);line-height:1.04;letter-spacing:-.01em;
+  margin:16px 0 0;
 }
 .hero-ref{
-  font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,26px);
-  color:var(--red);margin-top:16px;letter-spacing:.01em;
+  font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:500;
+  color:var(--mid);margin-top:16px;
 }
 .hero-hint{
-  display:flex;align-items:flex-start;gap:10px;margin-top:30px;line-height:1.6;
-  font-size:12.5px;color:var(--mid);
+  display:flex;align-items:center;gap:9px;
+  margin-top:30px;font-size:13px;color:var(--mid);
 }
-.hero-hint i{
-  width:22px;height:2px;background:var(--red);border-radius:2px;flex:none;margin-top:9px;
-}
-
-/* ───────── STRUCTURE MAP ───────── */
-.map{margin:44px 0 8px;}
-.map-h{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);}
-.map-row{display:flex;gap:18px;padding:15px 0;border-bottom:1px solid var(--light);}
-.map-row:first-of-type{border-top:1px solid var(--light);margin-top:14px;}
-.map-row:last-of-type{border-bottom:none;}
-.map-v{
-  font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--red);
-  flex:none;width:86px;padding-top:1px;
-}
-.map-t{font-size:14.5px;line-height:1.6;color:var(--dark);}
+.hero-hint i{display:inline-block;width:20px;height:2px;background:var(--red);flex:none;}
 
 /* ───────── SECTION ───────── */
 .sec{padding-top:64px;}
 .sec-num{
-  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;
-  color:var(--red);margin-bottom:0;
+  font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;
+  letter-spacing:.2em;color:var(--red);
 }
-.sec .block:first-of-type{margin-top:20px;}
-
-/* ───────── PASSAGE BLOCK ───────── */
-.block{margin-top:34px;}
+.sec-title{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(28px,4.4vw,38px);font-weight:600;line-height:1.2;
+  margin:8px 0 0;
+}
+.block{margin-top:38px;}
+.block + .block{margin-top:46px;}
+.ref{
+  font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:12px;
+}
 .passage{
   font-family:'Cormorant Garamond',serif;
-  font-size:clamp(23px,3.8vw,36px);
-  font-weight:600;line-height:1.58;letter-spacing:-.005em;
+  font-size:clamp(23px,3.8vw,36px);font-weight:600;line-height:1.58;
+  margin:0;letter-spacing:-.005em;
 }
 .vn{
-  font-family:'DM Sans',sans-serif;font-size:.36em;font-weight:700;
-  color:var(--red);vertical-align:.72em;letter-spacing:.02em;margin-right:.18em;
-}
-.src{
-  font-size:12px;font-weight:500;letter-spacing:.06em;color:var(--mid);
-  margin-top:14px;
+  font-family:'DM Sans',sans-serif;font-size:.42em;font-weight:500;
+  color:var(--mid);vertical-align:.42em;margin-right:.32em;letter-spacing:.04em;
 }
 
-/* ───────── ANNOTATION (red, tappable) ───────── */
+/* ───────── ANNOTATION ───────── */
 .ann{
-  color:var(--red);cursor:pointer;
-  padding-bottom:3px;
-  -webkit-box-decoration-break:clone;box-decoration-break:clone;
-  background-image:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 7' preserveAspectRatio='none'><path d='M0,4 Q50,1 100,4' fill='none' stroke='%23c0392b' stroke-width='1.7' stroke-linecap='round'/></svg>"),
-    linear-gradient(rgba(192,57,43,.28),rgba(192,57,43,.28));
-  background-repeat:no-repeat,no-repeat;
-  background-position:0 100%,0 100%;
-  background-size:0% 6px,100% 1px;
-  transition:background-size .55s cubic-bezier(.22,.8,.24,1),opacity .3s ease;
+  position:relative;display:inline;color:var(--red);cursor:pointer;
+  transition:opacity .3s;
+  text-decoration:underline;text-decoration-color:rgba(192,57,43,.28);
+  text-decoration-thickness:1.5px;text-underline-offset:.16em;
+  -webkit-tap-highlight-color:transparent;
 }
-.ann:hover{opacity:.82;}
-.ann:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px;}
-.ann.on{background-size:100% 6px,100% 1px;}
-.ann.dim{opacity:.4;}
+.ann:hover{text-decoration-color:rgba(192,57,43,.65);}
+.ann.on{
+  text-decoration-color:var(--red);text-decoration-thickness:2.5px;
+  background:rgba(192,57,43,.06);
+}
+.dim .ann:not(.on){opacity:.4;}
 
-/* ───────── EXPLANATION CARD (inline, under its passage) ───────── */
-.exp-card{
+/* ───────── INLINE EXPLANATION ───────── */
+.exp{
   max-height:0;overflow:hidden;
-  margin:0 calc(var(--pad) * -1);
-  transition:max-height .42s cubic-bezier(.22,.8,.24,1);
+  transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .3s;
+  opacity:0;
 }
-.exp-inner{
-  background:var(--card);border-top:2.5px solid var(--red);
-  padding:24px var(--pad) 28px;
+.exp.open{max-height:1400px;opacity:1;}
+.exp-in{
+  margin-top:20px;background:var(--card);
+  border-top:2.5px solid var(--red);
+  padding:24px 28px 26px;
+  box-shadow:0 1px 3px rgba(26,22,18,.05);
 }
-.exp-card.open .exp-inner{animation:fadeUp .34s ease .04s both;}
-@keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
-.exp-key{
-  font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+.exp-k{
+  font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
   color:var(--red);
 }
 .exp-rule{height:1px;background:var(--light);margin:13px 0 15px;}
-.exp-body{font-size:15px;line-height:1.78;color:#2f2822;}
-.exp-refs{
-  margin-top:16px;padding-top:13px;border-top:1px dashed var(--light);
-  font-size:12.5px;letter-spacing:.03em;color:var(--mid);
-}
-
-/* ───────── SUPPORT VERSES ───────── */
-.support{
-  margin-top:26px;padding-left:20px;border-left:2px solid var(--light);
-}
-.support p{
-  font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.62;
-  color:#3d352d;margin:0 0 16px;
-}
-.support p:last-child{margin-bottom:0;}
-.support .sv{
-  display:block;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;
-  letter-spacing:.06em;color:var(--mid);margin-top:5px;
+.exp-b{font-size:15px;line-height:1.75;color:#33291f;}
+.exp-r{
+  margin-top:15px;font-family:'Cormorant Garamond',serif;font-size:17px;
+  color:var(--mid);font-style:italic;
 }
 
 /* ───────── APPLICATION ───────── */
 .apply{
-  margin-top:40px;background:#fff;border:1px solid var(--light);
-  border-left:3px solid var(--red);padding:26px 28px;
+  margin-top:70px;background:var(--dark);color:#fff;padding:44px var(--pad) 46px;
 }
 .apply h3{
-  font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--red);margin:0 0 14px;
+  font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);
+  margin:0 0 26px;
 }
-.apply ol{margin:0;padding-left:19px;}
-.apply li{font-size:15px;line-height:1.75;color:#2f2822;margin-bottom:9px;}
-.apply li:last-child{margin-bottom:0;}
+.apply-row{display:flex;gap:20px;padding:18px 0;border-top:1px solid rgba(255,255,255,.12);}
+.apply-n{
+  font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;
+  color:var(--red);width:38px;flex:none;line-height:1;
+}
+.apply-t{
+  font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:500;
+  font-style:italic;line-height:1.4;
+}
+.apply-s{font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.62);margin-top:7px;}
 
 /* ───────── SHARE ───────── */
-.share{margin-top:80px;padding-top:36px;border-top:1px solid var(--light);text-align:center;}
-.share-h{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-bottom:20px;}
-.share-btns{display:flex;gap:11px;justify-content:center;flex-wrap:wrap;}
+.share{margin-top:58px;text-align:center;}
+.share-h{
+  font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:18px;
+}
+.share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
 .btn{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;
-  padding:12px 22px;border-radius:999px;border:1px solid var(--light);
-  background:#fff;color:var(--dark);cursor:pointer;transition:transform .15s,box-shadow .2s;
+  font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:500;
+  padding:12px 22px;border-radius:999px;border:0;cursor:pointer;
+  transition:transform .15s,opacity .2s;
 }
-.btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(26,22,18,.08);}
-.btn:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+.btn:active{transform:scale(.97);}
+.btn-kakao{background:#FEE500;color:#3A1D1D;}
+.btn-copy{background:none;border:1px solid var(--light);color:var(--mid);}
 .btn svg{width:16px;height:16px;}
-.btn-kakao{background:#FEE500;color:#3A1D1D;border-color:#FEE500;}
-.foot{margin-top:34px;font-size:11.5px;letter-spacing:.06em;color:var(--mid);text-align:center;}
+.foot{
+  margin-top:34px;font-size:11.5px;letter-spacing:.06em;color:var(--mid);text-align:center;
+}
+.foot a{color:var(--mid);}
 
 /* ───────── TOAST ───────── */
 .toast{
   position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(14px);
-  background:var(--dark);color:#fff;font-size:13.5px;letter-spacing:.01em;
+  background:var(--dark);color:#fff;font-size:13.5px;
   padding:12px 22px;border-radius:999px;opacity:0;pointer-events:none;
   transition:opacity .25s,transform .25s;z-index:200;
 }
@@ -215,11 +199,12 @@ body{
   .hdr{padding:12px var(--pad);gap:12px;}
   .hdr-title{font-size:17px;}
   .hdr-r{gap:8px;}
-  .hero{padding:52px 0 40px;}
+  .hdr-logo{height:38px;}
+  .hero{padding:50px 0 38px;}
   .sec{padding-top:52px;}
-  .map-v{width:70px;font-size:17px;}
-  .exp-inner{padding:22px var(--pad) 24px;}
-  .exp-body{font-size:14.5px;}
+  .exp-in{padding:22px 20px 24px;}
+  .exp-b{font-size:14.5px;}
+  .apply{margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1);}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
@@ -230,8 +215,8 @@ body{
 
 <header class="hdr">
   <div class="hdr-l">
-    <div class="hdr-eyebrow">Psalms · 2026.09.13</div>
-    <div class="hdr-title">Invitation into God’s Presence</div>
+    <div class="hdr-eyebrow">Deuteronomy · 2026.09.20</div>
+    <div class="hdr-title">Moses’ Advice to Us</div>
   </div>
   <div class="hdr-r">
     <button class="icon-btn" type="button" onclick="copyLink()" aria-label="Copy link">
@@ -240,38 +225,40 @@ body{
         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
       </svg>
     </button>
-    <img class="hdr-logo" src="data:image/png;base64,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" alt="Wave Church">
+    <img class="hdr-logo" src="data:image/png;base64,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" alt="Wave Church">
   </div>
 </header>
 
 <div class="wrap">
 
   <section class="hero">
-    <div class="hero-label">Psalms · 2026.09.13</div>
-    <h1 class="hero-title">Invitation into<br>God’s Presence</h1>
-    <div class="hero-ref">Psalm 50</div>
+    <div class="hero-label">Deuteronomy · 2026.09.20</div>
+    <h1 class="hero-title">Moses’ Advice<br>to Us</h1>
+    <div class="hero-ref">Deuteronomy 31:10–12</div>
     <div class="hero-hint"><i></i> Tap any phrase in red to open its note right below the verse.</div>
 
-    <div class="map">
-      <div class="map-h">How the psalm unfolds</div>
-      <div class="map-row"><div class="map-v">vv. 1–6</div><div class="map-t">God calls His people before the whole world.</div></div>
-      <div class="map-row"><div class="map-v">vv. 7–15</div><div class="map-t">He tells His people to come before Him with thanksgiving and without misunderstanding who He is.</div></div>
-      <div class="map-row"><div class="map-v">vv. 16–23</div><div class="map-t">He calls His people to turn away from sinful actions.</div></div>
-    </div>
   </section>
 
   <!-- I -->
   <section class="sec">
     <div class="sec-num">I</div>
+    <h2 class="sec-title">Introduction</h2>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">4</span>Then he appointed some of the Levites to minister before the ark of the LORD, to give thanks, praise, and worship the LORD God of Israel. <span class="vn">5</span><span class="ann" data-id="asaph" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">Asaph was the chief</span>, and next to him was Zechariah … and Jeiel. They played stringed instruments and harps, while <span class="ann" data-id="cymbals" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">Asaph played the cymbals with strength</span>.
-      </div>
-      <div class="src">1 Chr. 16:4–5</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Psalm 50:4–5</div>
+      <p class="passage">
+        <span class="vn">4</span>God calls to the heavens above and the earth below to judge His people.
+        <span class="vn">5</span>He says, <span class="ann" data-id="a1" onclick="tog(this)">Gather My faithful people before Me</span>, <span class="ann" data-id="a2" onclick="tog(this)">those who have made a covenant with Me through sacrifice</span>.
+      </p>
+      <div class="exp" id="exp-a1"><div class="exp-in">
+        <div class="exp-k">God came as Judge — and as Teacher</div><div class="exp-rule"></div>
+        <div class="exp-b">Last time, through Asaph’s Psalm 50, we reflected together on the message proclaimed to the people of Israel who had gathered to remember their covenant with God and commit themselves to standing before Him once again. Although God came as Judge, He wanted to teach the people of Israel who He is.</div>
+        <div class="exp-r">Ps. 50:4–5</div>
+      </div></div>
+      <div class="exp" id="exp-a2"><div class="exp-in">
+        <div class="exp-k">Where the command came from</div><div class="exp-rule"></div>
+        <div class="exp-b">Today, we will look at where the command for the Israelites to remember this covenant every seven years and renew their relationship with God before Him came from. We will also consider how this command, which Moses left for the generations after him, can apply to us today.</div>
+        <div class="exp-r">Deut. 31:10–12</div>
       </div></div>
     </div>
   </section>
@@ -279,53 +266,221 @@ body{
   <!-- II -->
   <section class="sec">
     <div class="sec-num">II</div>
+    <h2 class="sec-title">Do Not Forget God’s Word</h2>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">1</span>The Mighty One, the LORD God, has spoken and <span class="ann" data-id="called-earth" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">called the earth from the rising of the sun to its going down</span>. <span class="vn">2</span>Out of Zion, the perfection of beauty, <span class="ann" data-id="shone-forth" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">God has shone forth</span>. <span class="vn">3</span>Our God shall come and shall not keep silent; <span class="ann" data-id="fire-storm" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">a consuming fire goes before Him, and a mighty storm surrounds Him</span>. <span class="vn">4</span>He calls to the heavens above and to the earth, <span class="ann" data-id="judge-people" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">that He may judge His people</span>: <span class="vn">5</span>Gather My saints together to Me, <span class="ann" data-id="covenant-sacrifice" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">those who have made a covenant with Me by sacrifice</span>. <span class="vn">6</span>Let the heavens declare His righteousness, for God Himself is Judge. Selah.
-      </div>
-      <div class="src">Ps. 50:1–6</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Joshua 8:33</div>
+      <p class="passage">
+        <span class="vn">33</span>All Israel, including their elders, officers, and judges, both native-born Israelites and foreigners, stood on both sides of the ark before the Levitical priests who carried the ark of the LORD’s covenant. <span class="ann" data-id="b1" onclick="tog(this)">Half stood in front of Mount Gerizim, and half stood in front of Mount Ebal</span>, <span class="ann" data-id="b2" onclick="tog(this)">just as Moses, the servant of the LORD, had previously commanded</span> for the blessing of the people of Israel.
+      </p>
+      <div class="exp" id="exp-b1"><div class="exp-in">
+        <div class="exp-k">Gathered between the two mountains</div><div class="exp-rule"></div>
+        <div class="exp-b">After entering the land of Canaan under Joshua’s leadership, the Israelites won the battle at Jericho. They suffered defeat at Ai but soon won the next battle there. Afterward, they gathered between Mount Ebal and Mount Gerizim to remember their covenant with God and remind the nation of Israel of the words of blessing and cursing.</div>
+        <div class="exp-r">Josh. 8:30–33</div>
       </div></div>
+      <div class="exp" id="exp-b2"><div class="exp-in">
+        <div class="exp-k">A command left behind by Moses</div><div class="exp-rule"></div>
+        <div class="exp-b">Interestingly, this was something Moses had commanded in his farewell message before the Israelites crossed the Jordan River into the land of Canaan. Moses taught the Israelites about the blessings and curses connected to their relationship with God, and he wanted them to remember these things even after entering Canaan.</div>
+        <div class="exp-r">Deut. 11:29–32</div>
+      </div></div>
+    </div>
 
-      <div class="support">
-        <p>… For when You judge the earth, the inhabitants of the world learn righteousness.<span class="sv">Isa. 26:9</span></p>
-        <p>My people are destroyed for lack of knowledge of the LORD …<span class="sv">Hos. 4:6</span></p>
-        <p>For the earth will be filled with the knowledge of the glory of the LORD, as the waters cover the sea.<span class="sv">Hab. 2:14</span></p>
-        <p>No more shall every man teach his neighbor and every man his brother, saying, Know the LORD, for they all shall know Me, from the least of them to the greatest of them …<span class="sv">Jer. 31:34</span></p>
-      </div>
+    <div class="block">
+      <div class="ref">Joshua 8:34–35</div>
+      <p class="passage">
+        <span class="vn">34</span>Afterward, <span class="ann" data-id="b3" onclick="tog(this)">Joshua read all the words of the law, the blessings and the curses</span>, according to everything written in the Book of the Law.
+        <span class="vn">35</span>There was not a single word of all that Moses had commanded that Joshua failed to read before the whole assembly of Israel, <span class="ann" data-id="b4" onclick="tog(this)">including the women, children, and foreigners living among them</span>.
+      </p>
+      <div class="exp" id="exp-b3"><div class="exp-in">
+        <div class="exp-k">Listening together to the whole law</div><div class="exp-rule"></div>
+        <div class="exp-b">At this time, half of the people stood in front of Mount Gerizim, and the other half stood in front of Mount Ebal. As they listened to Joshua read all the words of the law, they remembered their covenant with the God who had led them this far and took this time to commit themselves to living as His covenant people.</div>
+        <div class="exp-r">Josh. 8:34–35</div>
+      </div></div>
+      <div class="exp" id="exp-b4"><div class="exp-in">
+        <div class="exp-k">No one left out</div><div class="exp-rule"></div>
+        <div class="exp-b">The whole assembly heard the Word — women, children, and the foreigners living among them. Remembering the covenant was never the task of leaders alone; it belonged to every person who stood before the LORD that day.</div>
+        <div class="exp-r">Josh. 8:35 · Deut. 31:12</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Deuteronomy 11:29–32</div>
+      <p class="passage">
+        <span class="vn">29</span>When the LORD your God brings you into the land you are going to possess, <span class="ann" data-id="b5" onclick="tog(this)">proclaim the blessing on Mount Gerizim and the curse on Mount Ebal</span>. …
+        <span class="vn">32</span><span class="ann" data-id="b6" onclick="tog(this)">Be careful to follow all the statutes and laws that I am setting before you today</span>.
+      </p>
+      <div class="exp" id="exp-b5"><div class="exp-in">
+        <div class="exp-k">Blessing and curse</div><div class="exp-rule"></div>
+        <div class="exp-b">Moses taught the Israelites about the blessings and curses connected to their relationship with God, and he wanted them to remember these things even after entering Canaan — which is exactly what Joshua carried out between the two mountains.</div>
+        <div class="exp-r">Deut. 11:29–32 · Josh. 8:33</div>
+      </div></div>
+      <div class="exp" id="exp-b6"><div class="exp-in">
+        <div class="exp-k">Careful obedience</div><div class="exp-rule"></div>
+        <div class="exp-b">The land was a gift, but life in the land was to be shaped by the Word. Moses’ concern was not the crossing of the Jordan but what the people would live by once they were on the other side.</div>
+        <div class="exp-r">Deut. 11:32</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Deuteronomy 27:4–8</div>
+      <p class="passage">
+        <span class="vn">4</span>When you cross the Jordan, set up these stones on Mount Ebal, as I command you today, and coat them with lime. …
+        <span class="vn">6</span><span class="ann" data-id="b7" onclick="tog(this)">Build an altar to the LORD your God with uncut stones</span>, and offer burnt offerings on it to the LORD your God.
+        <span class="vn">7</span>Offer peace offerings as well, eat there, and <span class="ann" data-id="b8" onclick="tog(this)">rejoice before the LORD your God</span>.
+        <span class="vn">8</span><span class="ann" data-id="b9" onclick="tog(this)">Write all the words of this law clearly and accurately on those stones</span>.
+      </p>
+      <div class="exp" id="exp-b7"><div class="exp-in">
+        <div class="exp-k">An altar on Mount Ebal</div><div class="exp-rule"></div>
+        <div class="exp-b">Moses commanded the Israelites to build an altar on Mount Ebal and offer burnt offerings and peace offerings to God — worship was to be the first thing established in the new land.</div>
+        <div class="exp-r">Deut. 27:4–6</div>
+      </div></div>
+      <div class="exp" id="exp-b8"><div class="exp-in">
+        <div class="exp-k">Enjoying His presence</div><div class="exp-rule"></div>
+        <div class="exp-b">They were to eat there and rejoice before the LORD their God — to enjoy being in His presence, not merely to complete a ritual.</div>
+        <div class="exp-r">Deut. 27:7</div>
+      </div></div>
+      <div class="exp" id="exp-b9"><div class="exp-in">
+        <div class="exp-k">So they would not forget</div><div class="exp-rule"></div>
+        <div class="exp-b">He also commanded them to write the words of this law clearly on stones so that they would not forget them. We can see his deep desire for them to live according to God’s Word even after entering the land of Canaan.</div>
+        <div class="exp-r">Deut. 27:8</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Genesis 12:6–7</div>
+      <p class="passage">
+        <span class="vn">6</span>Abram traveled through the land as far as <span class="ann" data-id="b10" onclick="tog(this)">the oak of Moreh at Shechem</span>. At that time, the Canaanites were living in the land.
+        <span class="vn">7</span>The LORD appeared to Abram and said, <span class="ann" data-id="b11" onclick="tog(this)">I will give this land to your descendants</span>. So Abram built an altar there to the LORD, who had appeared to him.
+      </p>
+      <div class="exp" id="exp-b10"><div class="exp-in">
+        <div class="exp-k">Shechem — the first place of worship</div><div class="exp-rule"></div>
+        <div class="exp-b">Shechem, where Mount Ebal and Mount Gerizim are located, became the first place where the Israelites worshiped after entering the land of Canaan. Until David later made Jerusalem the center of worship and government, this was a very important place for the Israelites in the Promised Land.</div>
+        <div class="exp-r">2 Sam. 5:6–9 · 2 Sam. 6:12–17</div>
+      </div></div>
+      <div class="exp" id="exp-b11"><div class="exp-in">
+        <div class="exp-k">The promise given at Shechem</div><div class="exp-rule"></div>
+        <div class="exp-b">Shechem was also where God promised Abraham that He would give this land to his descendants. Generations later, his descendants stood in that same place to hear the law read aloud.</div>
+        <div class="exp-r">Gen. 12:6–7</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">John 4:20–21</div>
+      <p class="passage">
+        <span class="vn">20</span><span class="ann" data-id="b12" onclick="tog(this)">Our ancestors worshiped on this mountain</span>, but you say that Jerusalem is the place where people should worship.
+        <span class="vn">21</span>Jesus said to her, “Woman, believe Me, the hour is coming when you will <span class="ann" data-id="b13" onclick="tog(this)">neither on this mountain, nor in Jerusalem, worship the Father</span>.
+      </p>
+      <div class="exp" id="exp-b12"><div class="exp-in">
+        <div class="exp-k">Mount Gerizim and the Samaritans</div><div class="exp-rule"></div>
+        <div class="exp-b">Shechem was such an important place that the Samaritans later made Mount Gerizim their place of worship. For the Israelites, it was part of the land God had promised, and it was also the location of Jacob’s well.</div>
+        <div class="exp-r">John 4:5–6 · 4:20</div>
+      </div></div>
+      <div class="exp" id="exp-b13"><div class="exp-in">
+        <div class="exp-k">Where Jesus met the Samaritan woman</div><div class="exp-rule"></div>
+        <div class="exp-b">This was the very place where Jesus met and spoke with the Samaritan woman. The mountain that had held Israel’s memory of the covenant became the place where Jesus pointed beyond every mountain to the Father Himself.</div>
+        <div class="exp-r">John 4:20–21</div>
+      </div></div>
     </div>
   </section>
 
   <!-- III -->
   <section class="sec">
     <div class="sec-num">III</div>
+    <h2 class="sec-title">The Blessed Life of Living by God’s Word</h2>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">7</span>Hear, O My people, and I will speak … <span class="vn">8</span>I will not rebuke you because of your sacrifices … <span class="vn">10</span>For <span class="ann" data-id="every-beast" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">every beast of the forest is Mine, and the cattle on a thousand hills</span>. <span class="vn">11</span>I know all the birds of the mountains, and the wild beasts of the field are Mine. <span class="vn">12</span>… For <span class="ann" data-id="world-is-mine" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">the world is Mine, and all its fullness</span>.
-      </div>
-      <div class="src">Ps. 50:7–12</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Deuteronomy 31:10–12 · Main Text</div>
+      <p class="passage">
+        <span class="vn">10</span>Moses commanded them, <span class="ann" data-id="c1" onclick="tog(this)">At the end of every seven years, during the Feast of Tabernacles in the year of release</span>,
+        <span class="vn">11</span>when all Israel gathers before the LORD your God at the place He chooses, <span class="ann" data-id="c2" onclick="tog(this)">read this law aloud so that all Israel can hear it</span>.
+        <span class="vn">12</span>… <span class="ann" data-id="c3" onclick="tog(this)">so that they may fear the LORD your God and carefully obey all the words of this law</span>.
+      </p>
+      <div class="exp" id="exp-c1"><div class="exp-in">
+        <div class="exp-k">Every seven years</div><div class="exp-rule"></div>
+        <div class="exp-b">Moses commanded the Israelites to read the words of this law every seven years at the place God would choose, which would later be Jerusalem, so that they would obey them.</div>
+        <div class="exp-r">Deut. 31:10–11</div>
       </div></div>
-
-      <div class="support">
-        <p>… God said, I will dwell in them and walk among them. I will be their God, and they shall be My people.<span class="sv">2 Cor. 6:16</span></p>
-      </div>
+      <div class="exp" id="exp-c2"><div class="exp-in">
+        <div class="exp-k">Read aloud for all to hear</div><div class="exp-rule"></div>
+        <div class="exp-b">The whole nation was to hear the law read together. This is the command behind the gathering Asaph described in Psalm 50 — a people assembled before God to remember whose they are.</div>
+        <div class="exp-r">Deut. 31:11 · Ps. 50:5</div>
+      </div></div>
+      <div class="exp" id="exp-c3"><div class="exp-in">
+        <div class="exp-k">Why Moses gave this command</div><div class="exp-rule"></div>
+        <div class="exp-b">Moses did not want the Israelites to follow the pagan customs of Canaan and abandon the LORD their God, giving up His blessings and bringing curses upon themselves.</div>
+        <div class="exp-r">Deut. 31:12</div>
+      </div></div>
     </div>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">14</span>Offer to God <span class="ann" data-id="thanksgiving" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">a sacrifice of thanksgiving</span>, and fulfill your vows to the Most High. <span class="vn">15</span><span class="ann" data-id="call-upon-me" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">Call upon Me in the day of trouble</span>; I will deliver you, and you shall glorify Me. … <span class="vn">23</span>Whoever offers a sacrifice of thanksgiving glorifies Me …
-      </div>
-      <div class="src">Ps. 50:14–15, 23</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Romans 12:2</div>
+      <p class="passage">
+        <span class="vn">2</span><span class="ann" data-id="c4" onclick="tog(this)">Do not follow the pattern of this age</span>, but <span class="ann" data-id="c5" onclick="tog(this)">be transformed through the renewing of your mind</span>, so that you may discern God’s good, pleasing, and perfect will.
+      </p>
+      <div class="exp" id="exp-c4"><div class="exp-in">
+        <div class="exp-k">Does this apply to us?</div><div class="exp-rule"></div>
+        <div class="exp-b">This call to live by God’s Word also applies to us today. Of course, the curses and blessings spoken to Israel belonged to the covenant between God and Israel, the two parties to that covenant, and do not apply to us as Gentiles.</div>
+        <div class="exp-r">Rom. 12:2</div>
+      </div></div>
+      <div class="exp" id="exp-c5"><div class="exp-in">
+        <div class="exp-k">Not swept along</div><div class="exp-rule"></div>
+        <div class="exp-b">However, as Christians, being swept along by the world’s customs and ways of thinking is not what God wants for His children.</div>
+        <div class="exp-r">Rom. 12:2</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Psalm 1:1–3</div>
+      <p class="passage">
+        <span class="vn">1</span>Blessed is the person who does not follow the advice of the wicked, stand in the way of sinners, or sit among those who mock,
+        <span class="vn">2</span>but <span class="ann" data-id="c6" onclick="tog(this)">delights in the LORD’s law and meditates on it day and night</span>.
+        <span class="vn">3</span>That person is <span class="ann" data-id="c7" onclick="tog(this)">like a tree planted beside streams of water</span>, bearing fruit in season, with leaves that do not wither. Everything that person does prospers.
+      </p>
+      <div class="exp" id="exp-c6"><div class="exp-in">
+        <div class="exp-k">How the Psalms begin</div><div class="exp-rule"></div>
+        <div class="exp-b">The Book of Psalms, with its 150 psalms, begins by declaring the blessedness of living according to God’s Word.</div>
+        <div class="exp-r">Ps. 1:1–2</div>
+      </div></div>
+      <div class="exp" id="exp-c7"><div class="exp-in">
+        <div class="exp-k">A tree by the water</div><div class="exp-rule"></div>
+        <div class="exp-b">The blessed life is not a life without seasons, but a life rooted where the water never runs out — fruit in season, leaves that do not wither.</div>
+        <div class="exp-r">Ps. 1:3 · Jer. 17:7–8</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Psalm 119:9</div>
+      <p class="passage">
+        <span class="vn">9</span>How can a young person keep his conduct pure? <span class="ann" data-id="c8" onclick="tog(this)">By following Your word</span>.
+      </p>
+      <div class="exp" id="exp-c8"><div class="exp-in">
+        <div class="exp-k">The only way</div><div class="exp-rule"></div>
+        <div class="exp-b">The writer of Psalm 119 also sings that the only way for a young person to live rightly is to follow God’s Word.</div>
+        <div class="exp-r">Ps. 119:9</div>
+      </div></div>
+    </div>
+
+    <div class="block">
+      <div class="ref">Psalm 73:3, 17, 28</div>
+      <p class="passage">
+        <span class="vn">3</span><span class="ann" data-id="c9" onclick="tog(this)">For I envied the arrogant when I saw the wicked prosper</span>. …
+        <span class="vn">17</span><span class="ann" data-id="c10" onclick="tog(this)">Only when I entered God’s sanctuary did I understand their final outcome</span>. …
+        <span class="vn">28</span>But for me, <span class="ann" data-id="c11" onclick="tog(this)">being near God is good</span>. …
+      </p>
+      <div class="exp" id="exp-c9"><div class="exp-in">
+        <div class="exp-k">Asaph’s trouble</div><div class="exp-rule"></div>
+        <div class="exp-b">In Psalm 73, Asaph is troubled when he sees the wicked prospering even though they live without God’s Word.</div>
+        <div class="exp-r">Ps. 73:3</div>
+      </div></div>
+      <div class="exp" id="exp-c10"><div class="exp-in">
+        <div class="exp-k">Seeing the end</div><div class="exp-rule"></div>
+        <div class="exp-b">His question was not answered by better arguments but by entering God’s sanctuary, where he finally understood their final outcome.</div>
+        <div class="exp-r">Ps. 73:16–17</div>
+      </div></div>
+      <div class="exp" id="exp-c11"><div class="exp-in">
+        <div class="exp-k">Nearness as blessing</div><div class="exp-rule"></div>
+        <div class="exp-b">After understanding their final outcome, he declares that being near God is his blessing.</div>
+        <div class="exp-r">Ps. 73:28</div>
       </div></div>
     </div>
   </section>
@@ -333,53 +488,79 @@ body{
   <!-- IV -->
   <section class="sec">
     <div class="sec-num">IV</div>
+    <h2 class="sec-title">Putting a Life of Living by the Word into Practice</h2>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">16</span><span class="ann" data-id="wicked" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">But to the wicked God says</span>: What right do you have to declare My statutes, or take My covenant in your mouth, <span class="vn">17</span>since you hate instruction and cast My words behind you? <span class="vn">18</span>When you saw a thief, you joined with him, and you became a companion of adulterers … <span class="vn">21</span>You did these things, and I kept silent; <span class="ann" data-id="like-you" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">you thought that I was altogether like you</span>. But I will rebuke you and <span class="ann" data-id="set-in-order" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">set your sins in order before your eyes</span>. <span class="vn">22</span>Now <span class="ann" data-id="consider-this" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">consider this, you who forget God</span>, lest I tear you in pieces, and there be none to deliver.
-      </div>
-      <div class="src">Ps. 50:16–22</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
-      </div></div>
-
-      <div class="support">
-        <p>The LORD is slow to anger and abundant in mercy, forgiving iniquity and transgression …<span class="sv">Num. 14:18</span></p>
-        <p>Therefore do not fear them. For there is nothing covered that will not be revealed, and hidden that will not be known.<span class="sv">Matt. 10:26</span></p>
-        <p>Whoever offers a sacrifice of thanksgiving glorifies Me; and to the one who orders his conduct rightly I will show the salvation of God.<span class="sv">Ps. 50:23</span></p>
-      </div>
-    </div>
-
-    <div class="block">
-      <div class="passage">
-        <span class="vn">19</span>Now <span class="ann" data-id="works-flesh" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">the works of the flesh</span> are evident: sexual immorality, uncleanness, lust, <span class="vn">20</span>idolatry, sorcery, hatred, conflict, jealousy, anger, selfish ambition, divisions, heresies, <span class="vn">21</span>envy, drunkenness, wild living, and things like these … <span class="vn">22</span>But <span class="ann" data-id="fruit-spirit" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">the fruit of the Spirit</span> is love, joy, peace, patience, kindness, goodness, faithfulness, <span class="vn">23</span>gentleness, and self-control. Against such things there is no law.
-      </div>
-      <div class="src">Gal. 5:19–23</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Matthew 4:4</div>
+      <p class="passage">
+        <span class="vn">4</span>Jesus answered, It is written that people do not live on bread alone, but on <span class="ann" data-id="d1" onclick="tog(this)">every word that comes from the mouth of God</span>.
+      </p>
+      <div class="exp" id="exp-d1"><div class="exp-in">
+        <div class="exp-k">#1 — Read Scripture every day</div><div class="exp-rule"></div>
+        <div class="exp-b">We can put a life of living by the Word into practice by reading Scripture every day.</div>
+        <div class="exp-r">Ps. 1:1–3 · Josh. 1:8 · Matt. 4:4</div>
       </div></div>
     </div>
 
-    <div class="apply">
-      <h3>This week</h3>
-      <ol>
-        <li>Place your life before the light of God this week.</li>
-        <li>Seek to give up one addiction that needs to be removed from your life.</li>
-        <li>Pray that one fruit of the Spirit you need most would grow in you.</li>
-      </ol>
+    <div class="block">
+      <div class="ref">Proverbs 3:5–6</div>
+      <p class="passage">
+        <span class="vn">5</span>Trust the LORD with your whole heart, and <span class="ann" data-id="d2" onclick="tog(this)">do not depend on your own understanding</span>.
+        <span class="vn">6</span><span class="ann" data-id="d3" onclick="tog(this)">Acknowledge Him in everything you do</span>, and He will guide your way.
+      </p>
+      <div class="exp" id="exp-d2"><div class="exp-in">
+        <div class="exp-k">#2 — Trust God’s Word</div><div class="exp-rule"></div>
+        <div class="exp-b">We can put a life of living by the Word into practice by trusting God’s Word.</div>
+        <div class="exp-r">Prov. 3:5–6 · Matt. 6:30–32 · Matt. 7:24–27</div>
+      </div></div>
+      <div class="exp" id="exp-d3"><div class="exp-in">
+        <div class="exp-k">In everything you do</div><div class="exp-rule"></div>
+        <div class="exp-b">Trusting the Word is not a feeling but a daily practice — acknowledging Him in the ordinary decisions where our own understanding feels sufficient.</div>
+        <div class="exp-r">Prov. 3:6</div>
+      </div></div>
     </div>
 
     <div class="block">
-      <div class="passage">
-        <span class="vn">1</span><span class="ann" data-id="return" role="button" tabindex="0" aria-expanded="false" onclick="activate(this)">Come, and let us return to the LORD</span> …
-      </div>
-      <div class="src">Hos. 6:1</div>
-      <div class="exp-card"><div class="exp-inner">
-        <div class="exp-key"></div><div class="exp-rule"></div>
-        <div class="exp-body"></div><div class="exp-refs"></div>
+      <div class="ref">Philippians 3:8–9</div>
+      <p class="passage">
+        <span class="vn">8</span>I consider everything a loss because <span class="ann" data-id="d4" onclick="tog(this)">knowing Christ Jesus my Lord is of far greater worth</span>. For His sake I have lost everything, and <span class="ann" data-id="d5" onclick="tog(this)">I consider it all rubbish so that I may gain Christ</span>
+        <span class="vn">9</span>and be found in Him. …
+      </p>
+      <div class="exp" id="exp-d4"><div class="exp-in">
+        <div class="exp-k">#3 — Know Jesus, who is the Word</div><div class="exp-rule"></div>
+        <div class="exp-b">We can put a life of living by the Word into practice by desiring to know Jesus, who is the Word, more deeply.</div>
+        <div class="exp-r">John 1:1, 14 · John 5:39–40 · Phil. 3:8–9</div>
       </div></div>
+      <div class="exp" id="exp-d5"><div class="exp-in">
+        <div class="exp-k">Gaining Christ</div><div class="exp-rule"></div>
+        <div class="exp-b">Paul measures everything he once counted as gain against one thing: being found in Christ. A life shaped by the Word ends here, in a Person.</div>
+        <div class="exp-r">Phil. 3:8–9</div>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="apply">
+    <h3>This week</h3>
+    <div class="apply-row">
+      <div class="apply-n">1</div>
+      <div>
+        <div class="apply-t">Read Scripture every day.</div>
+        <div class="apply-s">Ps. 1:1–3 · Josh. 1:8 · Matt. 4:4</div>
+      </div>
+    </div>
+    <div class="apply-row">
+      <div class="apply-n">2</div>
+      <div>
+        <div class="apply-t">Trust God’s Word.</div>
+        <div class="apply-s">Prov. 3:5–6 · Matt. 6:30–32 · Matt. 7:24–27</div>
+      </div>
+    </div>
+    <div class="apply-row">
+      <div class="apply-n">3</div>
+      <div>
+        <div class="apply-t">Desire to know Jesus, who is the Word, more deeply.</div>
+        <div class="apply-s">John 1:1, 14 · John 5:39–40 · Phil. 3:8–9</div>
+      </div>
     </div>
   </section>
 
@@ -387,256 +568,110 @@ body{
     <div class="share-h">Share this message</div>
     <div class="share-btns">
       <button class="btn btn-kakao" type="button" onclick="shareKakao()">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.9 3 2.8 6.2 2.8 10.2c0 2.6 1.7 4.9 4.3 6.2-.2.7-.7 2.5-.8 2.9-.1.5.2.5.4.4.2-.1 2.6-1.8 3.7-2.5.5.1 1.1.1 1.6.1 5.1 0 9.2-3.2 9.2-7.1S17.1 3 12 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.98 3 3 6.2 3 10.14c0 2.5 1.66 4.7 4.17 5.96l-.9 3.3c-.09.32.26.58.54.4l3.98-2.62c.39.04.8.06 1.21.06 5.02 0 9-3.2 9-7.1S17.02 3 12 3z"/></svg>
         Share on KakaoTalk
       </button>
-      <button class="btn" type="button" onclick="copyLink()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <button class="btn btn-copy" type="button" onclick="copyLink()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
           <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
         </svg>
         Copy link
       </button>
     </div>
-    <div class="foot">Wave Church · Sunday Service</div>
+    <div class="foot">Wave Church · <a href="https://wavekc.org" target="_blank" rel="noopener">wavekc.org</a> · 2026.09.20</div>
   </section>
 
 </div>
 
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="toast" id="toast"></div>
 
-<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" crossorigin="anonymous"></script>
 <script>
-/* To enable KakaoTalk sharing, paste your JavaScript key below. If left empty, the button falls back to the native share sheet or link copy. */
+/* To enable KakaoTalk sharing, paste your JavaScript key below.
+   If left empty, the button falls back to the native share sheet or link copy. */
 const KAKAO_JS_KEY = "";
 
 const SHARE = {
-  title: "Invitation into God’s Presence",
-  desc:  "Psalm 50 — God calls His people into His presence with thanksgiving.",
-  url:   window.location.href,
+  title: "Moses’ Advice to Us",
+  desc:  "Deuteronomy 31:10–12 — Do not forget God’s Word, and live by it.",
+  url:   window.location.href
 };
 
-const ANNOTATIONS = {
-  "asaph": {
-    keyword: "Asaph was the chief",
-    body: "Asaph was a Levite who served as a leader of worship and praise in David’s tabernacle. The psalms of Asaph are Psalms 50 and 73–83. Psalm 50 was not simply a song, but a proclamation to the people of a message from God that had come to him.",
-    refs: "Ps. 50 · Ps. 73–83 · 1 Chr. 16:4–5"
-  },
-  "cymbals": {
-    keyword: "Played the cymbals with strength",
-    body: "Asaph led praise before the ark with the cymbals. The message of Psalm 50 can be divided into three main parts: in verses 1–6 God calls His people before the whole world; in verses 7–15 He tells His people to come before Him with thanksgiving and without misunderstanding who He is; and in verses 16–23 He calls His people to turn away from sinful actions.",
-    refs: "1 Chr. 16:5 · Ps. 50:1–6, 7–15, 16–23"
-  },
-  "called-earth": {
-    keyword: "He called the earth",
-    body: "The whole earth is a temple that God beautifully created, and He stands here calling His people to come before Him. He calls them from one end of the world to the other.",
-    refs: "Ps. 50:1"
-  },
-  "shone-forth": {
-    keyword: "God has shone forth",
-    body: "Out of Zion, the perfection of beauty, God shines His light. When He shines His light on us and opens our eyes, it is a great moment of grace.",
-    refs: "Ps. 50:2"
-  },
-  "fire-storm": {
-    keyword: "A consuming fire, a mighty storm",
-    body: "He comes into His temple, the whole world, with the powerful presence of fire and storm, and He speaks. Our God is not someone who has no emotion or cannot be felt. He has a burning heart toward us, and He is the center of the universe whose presence is real and tangible.",
-    refs: "Ps. 50:3"
-  },
-  "judge-people": {
-    keyword: "That He may judge His people",
-    body: "Asaph clearly declares that God’s purpose in this psalm is judgment, while also proclaiming that God’s purpose in judgment does not end with condemning the world. He desires to teach His own people and give them an opportunity to return to Him. Biblical judgment does not end simply with the destruction of evil in this world, but with a generation filled with the knowledge of Him. In the last days, the knowledge of God becomes rare, but He will reverse this.",
-    refs: "Isa. 26:9 · Hos. 4:6 · Hab. 2:14 · Jer. 31:34"
-  },
-  "covenant-sacrifice": {
-    keyword: "A covenant with Me by sacrifice",
-    body: "The people of Israel made a covenant with God at Mount Sinai, and they were to gather every seven years during the Feast of Tabernacles to renew this covenant. God made a covenant with His people, and He did not want them to forget His promises. Asaph may have been prophesying to the people who had gathered during the Feast of Tabernacles for the renewal of the covenant.",
-    refs: "Ex. 24:5–8 · Deut. 31:10–11 · Lev. 26 · Deut. 27–30"
-  },
-  "every-beast": {
-    keyword: "Every beast of the forest is Mine",
-    body: "God stands as the greatest One over all the earth and speaks to the people of Israel, opening their eyes and teaching them that He is not lacking anything because everything on the earth already belongs to Him. He is the One who feeds us out of His abundance.",
-    refs: "Ps. 50:10–11"
-  },
-  "world-is-mine": {
-    keyword: "The world is Mine, and all its fullness",
-    body: "We are people who have received God Himself, who becomes everything in our lives, beginning with the overwhelming grace of salvation through the Cross.",
-    refs: "Ps. 50:12 · 2 Cor. 6:16"
-  },
-  "thanksgiving": {
-    keyword: "A sacrifice of thanksgiving",
-    body: "God is not someone who needs our offerings, nor is He someone who needs our sacrifices. He does not ask for our devotion because He lacks something or because He is angry. He desires to walk with us and have fellowship with us, and for this reason He leads us in many different ways. He wants to give us His good things, He wants to help us, and He wants us to know Him deeply. The life of faith is not a burdensome duty, but a joyful walk with God. Satan has turned an exciting walk with God into a religious game of trying to earn His favor.",
-    refs: "Ps. 50:14, 23"
-  },
-  "call-upon-me": {
-    keyword: "Call upon Me in the day of trouble",
-    body: "God does not want us to be bound by religious forms. He wants us to actually experience Him filling our lives, respond to what He does, offer sacrifices of thanksgiving and worship, and come before Him by offering our lives to Him. God wants to show us who He is, and He wants us to enjoy Him and overflow with thanksgiving. Even when we go through a season of drought, we can still give thanks because He is still good.",
-    refs: "Ps. 50:15"
-  },
-  "wicked": {
-    keyword: "But to the wicked God says",
-    body: "God now focuses His words not on the people in general, but on the wicked. Nothing can be hidden before the great presence of God, and many of those who were listening to Asaph’s prophetic song may have felt deeply convicted.",
-    refs: "Ps. 50:16–18"
-  },
-  "like-you": {
-    keyword: "Altogether like you",
-    body: "God now reveals their misunderstanding about Him. God has not remained silent because He treats evil lightly as they do. Rather, our God is slow to anger.",
-    refs: "Ps. 50:21 · Num. 14:18"
-  },
-  "set-in-order": {
-    keyword: "Set your sins in order before your eyes",
-    body: "God tells us that eventually our lives will be completely revealed before Him. Our lives may not seem to have anything seriously wrong when we look at them ourselves, but when they are exposed before the light of God (v. 2), we discover that there are many things that need to be corrected. When He shines His light on us and opens our eyes, it is a great moment of grace.",
-    refs: "Matt. 10:26 · Ps. 50:23"
-  },
-  "consider-this": {
-    keyword: "Consider this, you who forget God",
-    body: "He tells those who have forgotten God to consider this. One thing we should not misunderstand here is that God is not someone who simply tears people apart. Rather, the wicked cannot stand before the holy presence of God without being torn apart.",
-    refs: "Ps. 50:22 · Ex. 19:21"
-  },
-  "works-flesh": {
-    keyword: "The works of the flesh",
-    body: "The apostle Paul, in his letter to the churches in Galatia, clearly distinguishes between the things the church should put away and the things it should pursue.",
-    refs: "Gal. 5:19–21"
-  },
-  "fruit-spirit": {
-    keyword: "The fruit of the Spirit",
-    body: "This week, let us place our lives before the light of God, seek to give up one addiction that needs to be removed from our lives, and pray that one fruit of the Spirit that we need most would grow in us.",
-    refs: "Gal. 5:22–23"
-  },
-  "return": {
-    keyword: "Let us return to the LORD",
-    body: "Repentance does not end with simply removing sin from our personal lives. It is the process of pursuing God and, in that pursuit, removing the things that hinder our relationship with Him.",
-    refs: "Hos. 6:1"
-  }
-};
+/* ── Annotations ── */
+function tog(el){
+  const id  = el.dataset.id;
+  const exp = document.getElementById('exp-' + id);
+  const wasOpen = el.classList.contains('on');
 
-let current = null;
+  document.querySelectorAll('.ann.on').forEach(a => a.classList.remove('on'));
+  document.querySelectorAll('.exp.open').forEach(e => e.classList.remove('open'));
+  document.body.classList.remove('dim');
 
-function closeAll(){
-  document.querySelectorAll('.exp-card.open').forEach(function(c){
-    c.style.maxHeight = '0px';
-    c.classList.remove('open');
-  });
-  document.querySelectorAll('.ann').forEach(function(a){
-    a.classList.remove('on','dim');
-    a.setAttribute('aria-expanded','false');
-  });
-  current = null;
-}
-
-function activate(el){
-  if (current === el){ closeAll(); return; }
-
-  const id = el.dataset.id;
-  const data = ANNOTATIONS[id];
-  if (!data) return;
-
-  const card = el.closest('.block').querySelector('.exp-card');
-
-  document.querySelectorAll('.exp-card.open').forEach(function(c){
-    if (c !== card){ c.style.maxHeight = '0px'; c.classList.remove('open'); }
-  });
-
-  document.querySelectorAll('.ann').forEach(function(a){
-    a.classList.remove('on');
-    a.classList.add('dim');
-    a.setAttribute('aria-expanded','false');
-  });
-  el.classList.remove('dim');
-  el.classList.add('on');
-  el.setAttribute('aria-expanded','true');
-
-  card.querySelector('.exp-key').textContent  = data.keyword;
-  card.querySelector('.exp-body').textContent = data.body;
-  const refs = card.querySelector('.exp-refs');
-  refs.textContent = data.refs || '';
-  refs.style.display = data.refs ? '' : 'none';
-
-  card.classList.remove('open');
-  void card.offsetWidth;
-  card.classList.add('open');
-  card.style.maxHeight = card.querySelector('.exp-inner').offsetHeight + 'px';
-
-  current = el;
-  setTimeout(function(){ ensureVisible(card); }, 470);
-}
-
-function ensureVisible(card){
-  const r = card.getBoundingClientRect();
-  if (r.bottom > window.innerHeight) {
-    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  if (!wasOpen) {
+    el.classList.add('on');
+    exp.classList.add('open');
+    document.body.classList.add('dim');
   }
 }
-
-document.addEventListener('keydown', function(e){
-  const t = e.target;
-  if (t.classList && t.classList.contains('ann') && (e.key === 'Enter' || e.key === ' ')){
-    e.preventDefault();
-    activate(t);
-  }
-  if (e.key === 'Escape') closeAll();
-});
-
-window.addEventListener('resize', function(){
-  document.querySelectorAll('.exp-card.open').forEach(function(c){
-    c.style.maxHeight = c.querySelector('.exp-inner').offsetHeight + 'px';
-  });
-});
 
 /* ── Share ── */
-let toastTimer = null;
 function toast(msg){
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2400);
+  setTimeout(() => t.classList.remove('show'), 2400);
 }
 
 function copyLink(){
   const url = window.location.href;
-  if (navigator.clipboard && window.isSecureContext){
+  if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(url).then(
-      function(){ toast('Link copied ✓'); },
-      function(){ fallbackCopy(url); }
+      () => toast('Link copied ✓'),
+      () => fallbackCopy(url)
     );
   } else {
     fallbackCopy(url);
   }
 }
 
-function fallbackCopy(text){
+function fallbackCopy(url){
   const ta = document.createElement('textarea');
-  ta.value = text;
+  ta.value = url;
   ta.style.position = 'fixed';
   ta.style.opacity = '0';
   document.body.appendChild(ta);
   ta.select();
-  try { document.execCommand('copy'); toast('Link copied ✓'); }
-  catch (err) { toast('Copy failed. Please copy the link from your address bar.'); }
+  try {
+    document.execCommand('copy');
+    toast('Link copied ✓');
+  } catch (e) {
+    toast('Copy failed. Please copy the link from your address bar.');
+  }
   document.body.removeChild(ta);
 }
 
-let kakaoReady = false;
-if (KAKAO_JS_KEY && window.Kakao){
-  try { Kakao.init(KAKAO_JS_KEY); kakaoReady = Kakao.isInitialized(); }
-  catch (err) { kakaoReady = false; }
-}
-
 function shareKakao(){
-  if (kakaoReady){
-    Kakao.Share.sendDefault({
-      objectType: 'text',
-      text: SHARE.title + '\n' + SHARE.desc,
-      link: { mobileWebUrl: SHARE.url, webUrl: SHARE.url }
+  if (KAKAO_JS_KEY && window.Kakao) {
+    if (!window.Kakao.isInitialized()) window.Kakao.init(KAKAO_JS_KEY);
+    window.Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: SHARE.title,
+        description: SHARE.desc,
+        imageUrl: '',
+        link: { mobileWebUrl: SHARE.url, webUrl: SHARE.url }
+      },
+      buttons: [{ title: 'Open', link: { mobileWebUrl: SHARE.url, webUrl: SHARE.url } }]
     });
     return;
   }
-  if (navigator.share){
-    navigator.share({ title: SHARE.title, text: SHARE.desc, url: SHARE.url }).catch(function(){});
+  if (navigator.share) {
+    navigator.share({ title: SHARE.title, text: SHARE.desc, url: SHARE.url }).catch(() => {});
     return;
   }
   copyLink();
 }
 </script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"></script>
 </body>
 </html>
